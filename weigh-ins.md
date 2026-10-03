@@ -11,3 +11,5 @@ If someone is overweight, decide case by case:
 - Leave them rejected. They do not fight.
 - Move them up into a higher division that already has other fighters. That needs a manual approval.
 - If they are only slightly over (about 100 g), they come to the Sportdata control desk. You can approve it manually, and only in a very limited way.
+
+If a weight shows and does not stay saved, check Min. Wei. and Max. Wei. on the Weight / size control list. The server setup and the scale checks are on the [Local server](local-server.md) and [Scale and scanner](scale-troubleshooting.md) pages.
