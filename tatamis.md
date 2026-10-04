@@ -4,6 +4,8 @@ Source: process document added 3 Oct 2026.
 
 Ring draws, draw records, and match calling: [Ring](ring.md).
 
+Copy a category for an extra match after matches have started: [Extra match](extra-match.md).
+
 ## Draws
 
 Draw, then Generate draw by selection, and select the tatami categories.
