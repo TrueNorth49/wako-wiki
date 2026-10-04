@@ -29,6 +29,10 @@ When you exit and it asks, save and overwrite the draw records as well.
 
 Lists, then Caller. This opens from the panel. A new window starts blank.
 
+Panels is open. Match Order / Lists / Caller is in that menu.
+
+![Panels, Match Order / Lists / Caller](img/panels-lists-caller.jpg)
+
 On the left are all available draw records per category.
 
 1. Draw records, then Expand all.
