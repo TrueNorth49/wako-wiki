@@ -12,6 +12,7 @@
   - [Final fixes](final-fixes.md)
   - [Ring](ring.md)
   - [Tatamis](tatamis.md)
+  - [Extra match](extra-match.md)
   - [Wrong name monitor (workaround)](wrong-name-monitor.md)
   - [Printing and publishing the match list](printing.md)
   - [Results](results.md)
