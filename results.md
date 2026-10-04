@@ -11,3 +11,7 @@ In the Results tab, check results with No award ceremony held.
 Generate them and print them.
 
 Then Results, then Award ceremony done. Mark the categories that have been printed and move them to the right side.
+
+Results is open on Award ceremony done.
+
+![Results and Award ceremony done](img/results-award.jpg)

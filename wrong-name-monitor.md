@@ -12,9 +12,35 @@ The monitors kept cycling through the tatamis and the ring while that dialog was
 
 Settings, Monitor / DTM Area Name Replace, already listed Ring 5 through Ring 1 mapped to RING and Tatami 4 through Tatami 1. That list was correct. It did not contain monitor. Leave that list as it is.
 
+The screen shows the Wrong name: monitor dialog and the area-name replace list.
+
+![Wrong name: monitor dialog and the area-name replace list](img/wrong-name-dialog.jpg)
+
+The next two shots show the Wrong name: monitor dialog.
+
+![Wrong name: monitor dialog](img/monitor-a.jpg)
+
+![Wrong name: monitor dialog](img/monitor-b.jpg)
+
+SET Monitor is open. Client Name is monitor1. The Wrong name: monitor dialog is on the screen.
+
+![SET Monitor with Client Name monitor1 and the Wrong name: monitor dialog](img/monitor-c.jpg)
+
 SET Monitor is under Panels. It is also a tab at the bottom of the window.
 
+Panels is open. SET Monitor is in that menu.
+
+![Panels, SET Monitor](img/panels-lists-caller.jpg)
+
 On that window, Client Name was blank, then saved as monitor1. The word monitor in the window title is not the client name.
+
+Client Name is monitor. Search, Remove, both Refresh buttons, and Close are on the window.
+
+![Client Name monitor, Search, Remove, both Refresh buttons, and Close](img/monitor-client-name.jpg)
+
+Client Name is monitor1. The dropdown lists Ring 1 to Ring 5.
+
+![Client Name monitor1, dropdown Ring 1 to Ring 5](img/monitor-client-monitor1.jpg)
 
 The Ring dropdown separately listed Ring 1, Tatami 1, Ring 2, Ring 3, Ring 4, Ring 5, and monitor. Remove takes monitor off the list. Search puts monitor back. After Remove, without Search, the list was only Ring 1 through Ring 5.
 
