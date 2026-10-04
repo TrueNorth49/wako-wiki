@@ -10,6 +10,10 @@ Source: Sport Data's export/import demo, and Lucas opening Backup Database in SE
 2. Backup online database.
 3. Pick the folder in Backup save directory. The top backup line is the one that runs the save.
 
+Backup Database is open. Backup online database and Backup save directory are on the window. The password box is empty.
+
+![Backup Database, Backup online database, and Backup save directory](img/backup-database.jpg)
+
 ## On the website
 
 Event, then Export event data, then Export as SQL.
