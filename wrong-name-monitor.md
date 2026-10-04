@@ -29,3 +29,13 @@ The steps below are a workaround. They are not the correct permanent fix.
 3. Do not press SET DTM Monitor (Refresh) or SET Activity Monitor (Refresh) while the screens are already cycling.
 
 This does not remove the stored name monitor.
+
+## Confirmed later on 4 Oct 2026
+
+This was confirmed on the display the same day. It is not a proper fix.
+
+SET Activity Monitor (Refresh) is the fight and score screen. SET DTM Monitor (Refresh) is the timetable. Pressing SET DTM Monitor (Refresh) makes the timetable show and cycle.
+
+The score screen still flashes between tatamis, for example between tatami 1 and tatami 2. Activity Monitor must still be open in the background. It had not been closed. The Close button under Activity Monitor is the control on the SET Monitor window, directly under SET Activity Monitor (Refresh). Closing the settings panel does not stop the score screen.
+
+The Wrong name: monitor dialog still returns when the rotation reaches the stored name monitor. Click OK. That is not fixed.
