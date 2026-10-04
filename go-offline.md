@@ -63,3 +63,5 @@ Open Monitor / DTM Area Name Replace.
 Fill Name Original and Name New, then Add. The process document example is Ring 1 replaced with Tatami 1. The list was empty. Nothing was added.
 
 ![Name Original, Name New, and Add](img/go-offline/10-area-fields.webp)
+
+Wrong name: monitor on the display is a separate workaround: [Wrong name monitor (workaround)](wrong-name-monitor.md).
