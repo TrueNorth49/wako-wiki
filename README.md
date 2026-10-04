@@ -20,6 +20,7 @@ Open [index.html](index.html) for the sidebar wiki. GitHub Pages can serve this 
 - [Final fixes](final-fixes.md)
 - [Ring](ring.md)
 - [Tatamis](tatamis.md)
+- [Wrong name monitor (workaround)](wrong-name-monitor.md)
 - [Printing and publishing the match list](printing.md)
 - [Results](results.md)
 
