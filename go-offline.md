@@ -30,7 +30,7 @@ In that Settings window, open User / Password.
 
 ![User / Password](img/go-offline/03-user-row.webp)
 
-Tick Add new user. The process document says the local user is set/set. The form behind that checkbox was not opened, and no user was created.
+Tick Add new user. The login is the one from the backup. The form behind that checkbox was not opened, and no user was created.
 
 ![Add new user](img/go-offline/04-add-user.webp)
 
