@@ -20,4 +20,6 @@
 - Other
 
   - [Database backup](backup.md)
+  - [Local server](local-server.md)
+  - [Scale and scanner](scale-troubleshooting.md)
   - [Draws](draws.md)
