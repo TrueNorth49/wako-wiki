@@ -35,7 +35,11 @@ Open [index.html](index.html) for the sidebar wiki. GitHub Pages can serve this 
 
 These were tried and the old menu labels were not on his build. Do not document them as instructions until a path is confirmed.
 
-- Athletes alone in a category. The v10 report "Entries in Categories 1 Athlete" is not in v12.2. On SET 12.2.0 build 3 (local test, 6 Oct 2026): Overviews / Statistics has no Entries in Categories and no one-athlete report. The nearest items are Categories and entries and Competitors in categories. Analysis is an item under Panels. There is no Analysis menu in the menu bar. Reports was not seen in the visible part of Panels. The Panels list runs past the bottom of the screen.
+- Athletes alone in a category. The v10 report "Entries in Categories 1 Athlete" is not in v12.2. On SET 12.2.0 build 3 (local test, 6 Oct 2026): Overviews / Statistics has no Entries in Categories and no one-athlete report. The nearest items are Categories and entries and Competitors in categories. Analysis is an item under Panels. There is no Analysis menu in the menu bar. Panels has no Reports item. The list was scrolled to the end. Its last items are Data services, ODF, Forms Category Matcher, Category Matcher, SET Video Review, Message Console, WT OVR and E-Tournament - SET Online Kickboxing (cut off on screen).
+
+  ![Panels list, top, Events to Forms Category Matcher](img/readme/03-panels-list-top.png)
+
+  ![Panels list, end, Category Matcher to E-Tournament](img/readme/04-panels-list-bottom.png)
 
   ![Overviews / Statistics, nearest items](img/readme/01-overviews-statistics.png)
 

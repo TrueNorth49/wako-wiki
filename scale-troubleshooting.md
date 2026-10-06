@@ -18,9 +18,17 @@ Both sections are in Panels, then Data services. Expand each section by its titl
 
 On SET 12.2.0 build 3 (local test, 6 Oct 2026): both sections showed 19200, 8, 1, None. That is the local copy's default. It does not change the venue value of 9600. The scale section has Open port, a COM dropdown, and the Scale: Ignore values below 1.0 kg checkbox. The barcode section has COM Port - Settings with Open port and a COM dropdown, Custom Command with Send Command, Enable Scanner beep on error, and a scanner dropdown set to Datalogic.
 
+In the local test no serial device was connected and no port was open. The COM dropdowns were empty, and Open port, COM and the 19200 baud field were greyed out. The local copy cannot show the venue setting. At the venue, check both sections and set 9600 if they show anything else.
+
+![Serial interface (TV, Scale, OVR, Horn), Open port, COM and 19200 greyed out](img/scale-troubleshooting/15-scale-port-greyed.png)
+
+![Serial interface (Barcode Scanner only), Open port, COM and 19200 greyed out](img/scale-troubleshooting/16-barcode-port-greyed.png)
+
 ## Port assignment
 
 The assignment that worked was scanner on COM5 and scale on COM6. The scale needed a power cycle after the port move. An earlier wrong assignment was scanner on COM3 and scale on COM5.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the COM dropdowns were empty, so COM5 and COM6 can only be checked at the venue.
 
 The scale option Ignore values below 1.0 kg was checked. On screen it reads Scale: Ignore values below 1.0 kg. It sits under Serial interface (TV, Scale, OVR, Horn) in Data services.
 
@@ -53,6 +61,10 @@ The field then reads "Weight / size control - Connected with Scale". "Exit Barco
 ![Default Action set, Exit Barcode Scanner Mode](img/scale-troubleshooting/14-default-action-set.png)
 
 The console showed NO EOT found while the scanner was on the wrong port. After the COM swap it showed BarCode Data Received and BarCode EOT found.
+
+The Message Console is the panel under the Main Tree Menu. It is also an item in Panels. On SET 12.2.0 build 3 (local test, 6 Oct 2026) no scanner was connected, so these lines did not show. The status line at the bottom of the window read "[INFO] Messages found 0". The console text is blurred in the screenshot.
+
+![Message Console panel and status line Messages found 0](img/scale-troubleshooting/17-message-console.png)
 
 ## Weights that do not stay saved
 

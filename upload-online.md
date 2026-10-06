@@ -14,7 +14,15 @@ Source: the Sportdata knowledge base article [Upload draws, timetable & results]
 
 ![Panels, SET Online Kickboxing / Kickboxing Events APP](img/upload-online/02-set-online-kickboxing.png)
 
-3. Scroll down the panel to the "Results" section. Its sections from top to bottom are "SET Liveblog Synchronizer", "Info and PSS Uploader / Match Schedule", "SET DTM Monitor Live Synchronizer", "Activity Monitor Live Synchronizer", "Match Caller Monitor Live Synchronizer", "Match Caller Area Monitor Live Synchronizer", "SET DTM - Dynamic Time Management", "Draw, Draw record, Point Draw...", "Results", "Download online photo" and "Online Downloads Section".
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the panel opened already wide on the right side. Its title bar and left edge are boxed below. The drag and the double click were not tried in the test.
+
+![SET Online Kickboxing panel, title bar and left edge](img/upload-online/07-panel-edge-title.png)
+
+3. Scroll down the panel to the "Results" section. Its sections from top to bottom are "SET Online Kickboxing / Kickboxing Events APP", "SET Liveblog Synchronizer", "Info and PSS Uploader / Match Schedule", "SET DTM Monitor Live Synchronizer", "Activity Monitor Live Synchronizer", "Match Caller Monitor Live Synchronizer", "Match Caller Area Monitor Live Synchronizer", "SET DTM - Dynamic Time Management", "Draw, Draw record, Point Draw...", "Results", "Download online photo" and "Online Downloads Section". The arrow at the right end of each title opens or closes the section.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026), with every section closed except "Online Downloads Section":
+
+![SET Online Kickboxing panel, all sections closed](img/upload-online/08-sections-collapsed.png)
 
 4. Click "Upload results to SET Online on www.sportdata.org / Kickboxing Events APP". Its tooltip reads "Upload results to SET Online on www.sportdata.org". The upload starts at once.
 
@@ -40,9 +48,29 @@ Draws, draw records and point draws can be uploaded the same way during the even
 
 ![Draw, Draw record, Point Draw..., Upload draws and records](img/upload-online/06-upload-draws-and-records.png)
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the other two lines were only hovered, never clicked. The "by selection" line has the tooltip "Upload draws and records to SET Online on www.sportdata.org by selection".
+
+![Draw, Draw record, Point Draw..., by selection, tooltip](img/upload-online/12-draws-by-selection-hover.png)
+
+"Remove uploaded Draws, Draw Records and Point Lists" showed no tooltip in the test.
+
+![Draw, Draw record, Point Draw..., Remove uploaded Draws, Draw Records and Point Lists](img/upload-online/13-draws-remove-hover.png)
+
 ## Timetable
 
 The "SET DTM - Dynamic Time Management" section has "Upload timetable to SET Online on www.sportdata.org / Kickboxing Events APP", the same "by selection" line and "Remove online time table on www.sportdata.org". The local install asks "Do you really want to upload the time table to be available and visible for public on www.sportdata.org?" before the timetable upload. The knowledge base says to press yes, and that a pop up confirms the upload. Not clicked on the local test.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the three lines were only hovered, never clicked. "Upload timetable to SET Online on www.sportdata.org / Kickboxing Events APP" has the tooltip "Upload timetable to SET Online on www.sportdata.org".
+
+![SET DTM - Dynamic Time Management, Upload timetable, tooltip](img/upload-online/09-timetable-upload-hover.png)
+
+The by selection line reads "Upload timetable to SET Online on www.sportdata.org by selection / Kickboxing Ev" (cut off on screen). No tooltip showed for it in the test.
+
+![SET DTM - Dynamic Time Management, Upload timetable by selection](img/upload-online/10-timetable-by-selection-hover.png)
+
+"Remove online time table on www.sportdata.org" has the same text as its tooltip.
+
+![SET DTM - Dynamic Time Management, Remove online time table, tooltip](img/upload-online/11-timetable-remove-hover.png)
 
 ## Check the event page
 
@@ -66,3 +94,5 @@ From the knowledge base article, lightly edited:
 12. On the event page, click on the results button.
 
 On SET 12.2.0 build 3 the results line uploads at once, without a confirm step (Lucas).
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the panel title reads "SET Online Kickboxing / Kickboxing Events APP", not "SET Online Test / Test Events App". The SET DTM - Dynamic Time Management lines for step 3 are shown under Timetable above.
