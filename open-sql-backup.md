@@ -74,4 +74,4 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ## If it fails
 
-"Database exists already!" means the name in step 5 is taken. Go back to step 3 and type a different name.
+SET stops with "Database exists already!" if the name is already used. Pick a name that does not exist yet.
