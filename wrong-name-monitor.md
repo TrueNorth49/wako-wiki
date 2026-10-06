@@ -52,9 +52,15 @@ Client Name is monitor. Search, Remove, both Refresh buttons, and Close are on t
 
 ![Client Name monitor, Search, Remove, both Refresh buttons, and Close](img/monitor-client-name.jpg)
 
-On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Client Name section is at the top of SET Monitor. Its value on the local copy was Ring. Below it is SET Client Monitor with SET Client ... and Delete all Cl... (both cut off on screen).
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Client Name section is at the top of SET Monitor. In a narrow panel only the word Ring shows. With the panel maximized, Ring is the label in front of the field, and the field read Tatami 1 on the local copy. A Save button is next to the field. Below it is SET Client Monitor with SET Client ... and Delete all Cl... (both cut off on screen).
 
 ![Client Name](img/wrong-name-monitor/03-client-name.png)
+
+![Client Name, label Ring, field Tatami 1](img/wrong-name-monitor/09-client-name-tatami1.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) monitor1 was typed in the field and saved with Save.
+
+![Client Name monitor1, Save](img/wrong-name-monitor/10-client-name-monitor1-save.png)
 
 Client Name is monitor1. The dropdown lists Ring 1 to Ring 5.
 
@@ -62,9 +68,29 @@ Client Name is monitor1. The dropdown lists Ring 1 to Ring 5.
 
 The Ring dropdown separately listed Ring 1, Tatami 1, Ring 2, Ring 3, Ring 4, Ring 5, and monitor. Remove takes monitor off the list. Search puts monitor back. After Remove, without Search, the list was only Ring 1 through Ring 5.
 
-On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Ring section has Add Ring with Add, then Search, the Ring dropdown, and Remove. The dropdown was empty on the local copy and had no monitor entry. Search and Remove were not pressed.
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Ring section has Add Ring with Add, then Search, the Ring dropdown, and Remove. The dropdown was empty at first. monitor was typed in Add Ring and Add was clicked. The dropdown then showed monitor.
 
 ![Search and Remove in the Ring section](img/wrong-name-monitor/04-search-remove.png)
+
+![Add Ring monitor, Add](img/wrong-name-monitor/11-add-ring-monitor.png)
+
+The open dropdown listed only monitor.
+
+![Ring dropdown open, monitor](img/wrong-name-monitor/12-ring-dropdown-monitor.png)
+
+Remove took monitor off, and the dropdown was empty again.
+
+![Ring dropdown empty after Remove](img/wrong-name-monitor/13-remove-empty.png)
+
+Search was only hovered, not clicked, because at the venue Search put monitor back.
+
+![Search hovered, not clicked](img/wrong-name-monitor/14-search-hover.png)
+
+At the end of the test Client Name was set back to Tatami 1 and saved.
+
+![Client Name back to Tatami 1, Save](img/wrong-name-monitor/15-client-name-back-tatami1.png)
+
+No "Names of Tatamis must end with a number" dialog came up in the local test. That dialog was only seen at the venue.
 
 Pressing SET DTM Monitor (Refresh) or SET Activity Monitor (Refresh) brought the same Wrong name: monitor dialog back. That happened even when the dropdown no longer showed monitor.
 
