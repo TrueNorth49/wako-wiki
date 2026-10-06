@@ -36,9 +36,49 @@ The server setup and the scale checks are on the [Local server](local-server.md)
 
 ![Status dropdown enabled](img/weigh-ins/03b-status-dropdown-enabled.png)
 
-2. In the dropdown, pick "Approved". The statuses are Pending, Approved, Deleted, Rejected, Weighed, Medical Test and Accreditation. The entry status is set there.
+2. Click the athlete's Entries Status cell (header "En..."). A dropdown opens in the cell.
 
-![Approved](img/weigh-ins/04-status-list.png)
+![Entries Status cell dropdown](img/weigh-ins/08a-status-cell-dropdown.png)
+
+3. Pick "Approved". The statuses are Pending, Approved, Deleted, Rejected, Weighed, Medical Test and Accreditation. The status saves at once and the cell turns green.
+
+![Cell set to Approved](img/weigh-ins/08b-status-cell-approved.png)
+
+To reject an athlete, pick "Rejected" in the same cell.
+
+![Rejected in the cell dropdown](img/weigh-ins/08c-status-cell-rejected.png)
+
+4. The status dropdown in the footer does not set the status of a row by itself. It is only used when a row's Passed box is ticked and "Autom. set entry status on status ok check" is on.
+
+![Footer dropdown and Autom. set entry status on status ok check](img/weigh-ins/09-footer-autom-dropdown.png)
+
+![Footer status dropdown list](img/weigh-ins/04-status-list.png)
+
+The right-click menu on an athlete row has "Weight / size control", "Edit", "Move entries", "Entry fee", "Accreditation" and "Accreditation Preview". It has no status item.
+
+![Row right-click menu](img/weigh-ins/07-row-menu.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Approved was set in the cell for one athlete and then set back to Pending.
+
+## Change the status of several athletes
+
+1. Open "Overviews / Statistics", then "All entries" (Ctrl+9).
+
+![Overviews / Statistics, All entries](img/weigh-ins/10a-all-entries-menu.png)
+
+2. In "Athlete Entries", select the rows. Click "Change status" in the footer. The button is cut off as "Change stat...".
+
+![Change status button, 2 entries selected](img/weigh-ins/10b-change-status-button.png)
+
+3. The prompt "Change status:" asks "Please select the status for all selected entries". Pick the status in the list.
+
+![Change status list](img/weigh-ins/10c-change-status-list.png)
+
+4. Click "OK".
+
+![OK](img/weigh-ins/10d-change-status-ok.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Cancel was clicked, so no status was changed this way.
 
 ## Move up a division
 
