@@ -123,7 +123,7 @@ Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a button for blank fig
 - stop autom. refresh (checkbox)
 - default sort, sort by day/tatami..., sort by day/time/t... (options)
 - Refresh / Reset
-- Show not hidden match...
+- Show not hidden matc...
 - Match-Forms
 - Reset print Match-Forms
 - Template
@@ -144,7 +144,13 @@ Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a button for blank fig
 
 At normal size most of these labels are cut off.
 
-![Main Options, maximized](img/ring/04h-main-options.png)
+The three close-ups below show the left, middle and right parts of Main Options with the panel maximized.
+
+![Main Options left: stop autom. refresh and the sort options](img/ring/04h-main-options-left.png)
+
+![Main Options middle: Edit number](img/ring/04h-main-options-middle.png)
+
+![Main Options right: Delete matches](img/ring/04h-main-options-right.png)
 
 If a fight is definitely not happening, delete the draws and the draw records. The match list updates on its own. If it does not, use Delete matches on the match calling table.
 
@@ -174,6 +180,14 @@ On build 3: Panels, then SET DTM. In the SET DTM - Dynamic Time Management v 2.0
 
 ![SET DTM panel, Edit DTM](img/ring/05b-edit-dtm.png)
 
+Set Date and Match areas at the top left. On SET 12.2.0 build 3 (local test, 6 Oct 2026): Oct 4, 2026 and 5 match areas, so the grid showed Area 1 to Area 5.
+
+![SET DTM, Date and Match areas](img/ring/05f-date-match-areas.png)
+
+For a weigh-in dummy entry, right-click the grid at the right area and time, then click Add custom Item (menu shown further down). No dialog opens. A yellow item named New appears at once in that area. In the test it appeared in Area 2, 01:25-01:55. Rename it, for example to Weigh-in, with Edit Item in the same menu or by double-clicking it. In this test the New item was not renamed and Edit Item was not opened.
+
+![New custom item in Area 2, 01:25-01:55](img/ring/05g-custom-item-new.png)
+
 Add a blank row with the word Session at the start of the fights, so reports can be generated.
 
 On build 3 there is no visible Add custom Item button. Right-click the timetable grid, then click Add custom Item (Ctrl+A). It adds an item named "New". Double-click the item to edit it. The editor has Starttime, Endtime, Item name, Location, Actions and Color. Type the name in Item name. In the test it was renamed to "Session test".
@@ -186,6 +200,18 @@ On build 3 there is no visible Add custom Item button. Right-click the timetable
 
 Select the categories for that day and that area, and add them to the timetable. Add the rest in a later pass by picking a different day or area.
 
-On build 3, Add to Timetable is a button in the Timetable Options panel at the bottom right of the Match calling window, next to Add/Replace to Timetable, Remove from Timetable and Select Competitors with double... (cut off). The right-click menu on the SET DTM grid has Add category. Neither was clicked in the test. Nothing was uploaded.
+On build 3, Add to Timetable is a button in the Timetable Options panel at the bottom right of the Match calling window, next to Add/Replace to Timetable, Remove from Timetable and Select Competitors with double... (cut off). The right-click menu on the SET DTM grid has Add category. Add to Timetable was only hovered in the test. Nothing was uploaded.
 
 ![Match calling, Timetable Options, Add to Timetable](img/ring/04i-add-to-timetable.png)
+
+To add a category from SET DTM, first select it in the category list on the left of the SET DTM window. The list shows each category with its entry count, for example 00 NEWCOMER 02 LC 1129 S M -63 kg (2).
+
+![SET DTM category list](img/ring/05h-dtm-category-list.png)
+
+Then right-click the grid and click Add category (shortcut A).
+
+![Grid right-click menu, Add category](img/ring/05i-add-category.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Add category was clicked with no category selected. A box titled "Attention!" said "No category selected." with only OK. The category was not added. The SET DTM window then closed without a save prompt.
+
+![Attention!, No category selected.](img/ring/05j-no-category-selected.png)
