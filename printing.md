@@ -30,6 +30,16 @@ On the local test, "Session Matchlist" opened "Please select an item!" with entr
 
 Save that same document as a PDF and upload it to the event page in Sportdata. Description as appropriate, type Event information. If you upload a new one, remove the previous file. Number them.
 
+To save as a PDF, open Export in the Print Preview window, then Save As PDF... (Ctrl+S). The same menu has Save as text file..., Export to RTF..., CSV, HTML and Excel.
+
+![Print Preview, Export, Save As PDF...](img/printing/05a-export-save-as-pdf.png)
+
+A window titled "Saving Report into a PDF-File ..." opens. Type a Filename or use Select File. OK stays greyed out until a filename is set, and the window says "Please specify a filename for the pdf file." Then click OK.
+
+![Saving Report into a PDF-File, Filename and Select File](img/printing/05b-pdf-filename.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): this was the Match List preview from the Match Caller panel. Cancel was clicked, so no PDF was saved.
+
 The upload was not tested on 6 Oct 2026, because it goes online.
 
 ## If something changes
@@ -51,3 +61,15 @@ The upload was not tested on 6 Oct 2026, because it goes online.
 5. Return to this list and insert it again at the right number. Shift the others.
 
 "Edit number" is in the same "Main Options" bar, with "Show in tree", "Reset match", "Draw record", "Delete missing n..." (cut off on screen) and "Refresh / Reset". "Assign number" and "Unset number" are under the draw record list on the left. Re-inserting at a number was not tested.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): match #1 was selected ("1 matches selected"), then Edit number.
+
+![Main Options, Edit number](img/printing/06a-edit-number.png)
+
+A box titled "Edit number: #1 07 K1 390 YJ M -57 kg" opened, with one text field, OK and Cancel. Cancel was clicked, so the number did not change.
+
+![Edit number box with its text field](img/printing/06b-edit-number-dialog.png)
+
+"Assign number" and "Unset number" are at the bottom of the Draw record/Point table list. Both were only hovered.
+
+![Assign number and Unset number](img/printing/06c-assign-unset-number.png)

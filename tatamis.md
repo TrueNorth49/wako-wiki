@@ -67,3 +67,15 @@ Click "Show / Print / Save as... by selection". A "Please select an item!" windo
 ![Show / Print / Save as... by selection](img/tatamis/04b-show-print-save-as-by-selection.png)
 
 That makes a short list per area, in time order, so people can see the plan.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the preview below was opened from the Match Caller side panel (Panels, then Match Order / Lists / Caller), with "Show / Print / Save as...". The SET DTM "by selection" list itself was not opened. "Automatically hide finished m..." (cut off) was ticked in the same panel.
+
+![Match Caller, Show / Print / Save as... and Automatically hide finished m...](img/tatamis/05a-match-caller-show-print.png)
+
+It asked "Please select an item!" with 2026-10-04 - Ring 1 to Ring 5. Ring 1 was picked, then OK.
+
+![Please select an item!, Ring 1, OK](img/tatamis/05b-select-ring-1.png)
+
+A Print Preview titled Match List opened, with the columns #, Category, Red, Blue, Round, Ring, Type, Time and Day. It had no rows, because the matches on the local copy are finished and finished matches were hidden.
+
+![Print Preview, Match List with no rows](img/tatamis/05c-match-list-preview.png)
