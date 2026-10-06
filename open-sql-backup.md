@@ -24,9 +24,11 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ![Attention box, OK](img/open-sql-backup/04-attention-ok.png)
 
-5. Click the Database field and type a new name for the imported database, for example bernercup2026_import. The name must not exist yet. If it exists, SET stops with "Database exists already!"
+5. Click the Database field and type a new name for the imported database, for example bernercup2026_import. The name must not exist yet. If it exists, SET stops with "Database exists already!" The name must not contain the word test. SET stops with: Database: Input "<name>" contains invalid chars "test"!
 
 ![Database name](img/open-sql-backup/05-database-name.png)
+
+![Attention box, invalid chars test](img/open-sql-backup/05b-invalid-chars-test.png)
 
 6. Click Connect. A "Load" file window opens.
 
@@ -56,7 +58,7 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ![SET Login](img/open-sql-backup/12-connect.png)
 
-13. Enter the SET-Username and SET-Password from the venue's SET. Click Log in. The login fields are blacked out.
+13. Enter the SET-Username and SET-Password from the venue's SET. Click Log in. The login fields are blacked out. Type the username exactly as SET stores it, including the underscore and capitals, for example Lucas_A, not Lucas A. A space instead of the underscore gives "Wrong SET-Username or SET-Password!" and empties the password field.
 
 ![SET Login, Log in](img/open-sql-backup/13-login.png)
 
@@ -75,3 +77,11 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 ## If it fails
 
 SET stops with "Database exists already!" if the name is already used. Pick a name that does not exist yet.
+
+SET stops with Database: Input "<name>" contains invalid chars "test"! if the name contains the word test. Click OK and pick a name without test, for example bernercup2026_import.
+
+![Attention box, invalid chars test](img/open-sql-backup/05b-invalid-chars-test.png)
+
+SET shows "Wrong SET-Username or SET-Password!" if the username or password does not match. Click OK. Check the username is typed exactly as SET stores it, with the underscore and capitals, for example Lucas_A. After a wrong login the password field is empty, so type the password again.
+
+![Attention box, wrong login](img/open-sql-backup/13b-wrong-login.png)
