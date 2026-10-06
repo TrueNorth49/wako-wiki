@@ -49,3 +49,7 @@ The window has two lists. The left one is "No honouring done (1st Place set)". T
 The venue photo shows the "Analysis" panel with "Award ceremony done" and the "Results" section.
 
 ![Analysis panel, Award ceremony done and Results](img/results-award.jpg)
+
+## Upload results
+
+When the results are final, upload them to the event page. See [Upload results to SET Online](upload-online.md).
