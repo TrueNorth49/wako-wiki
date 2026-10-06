@@ -94,9 +94,9 @@ Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): Expand all. Found inst
 
 ![Matches Tree, Expend selected categories](img/ring/04c-expend-selected-categories.png)
 
-In the test, double-clicking the Final of the _copy category added it. The tree then showed ">>assigned<< 1 [#29]  Final  Pool1" and the match list showed it as number 29.
+In the test, double-clicking the Final of the _copy category added it. The tree then showed `>>assigned<< 1 [#29]  Final  Pool1` and the match list showed it as number 29.
 
-![Tree entry >>assigned<< 1 [#29] Final Pool1](img/ring/04d-assigned-29.png)
+![Tree entry assigned 1, number 29, Final Pool1](img/ring/04d-assigned-29.png)
 
 ![Match list, new fight number 29](img/ring/04e-match-29-row.png)
 

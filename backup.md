@@ -50,7 +50,7 @@ Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): picking the folder in 
 
    ![Backup of local database, finished, Close](img/backup/07-close.png)
 
-The file is saved as .h2, even though the window says sql file. The name looks like SET_DB_BACKUP_local_kickboxing_\<date\>_\<time\>_\<dbname\>.h2.
+The file is saved as .h2, even though the window says sql file. The name looks like `SET_DB_BACKUP_local_kickboxing_<date>_<time>_<dbname>.h2`.
 
 ## On the website
 
