@@ -9,7 +9,13 @@ Checked on SET 12.2.0 build 3 on 6 Oct 2026, on a local copy that uses the integ
 ## In SET
 
 1. Panels, then Backup Database.
-2. Backup online database.
+
+   ![Panels, Backup Database](img/backup/01-panels-backup-database.png)
+
+2. Backup online database. On SET 12.2.0 build 3 (local test, 6 Oct 2026) the local copy shows Backup local database in that place.
+
+   ![Backup local database on the local copy](img/backup/02-backup-local-database.png)
+
 3. Pick the folder in Backup save directory. The top backup line is the one that runs the save.
 
 Backup Database is open. Backup online database and Backup save directory are on the window. The password box is empty.

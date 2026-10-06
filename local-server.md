@@ -55,3 +55,17 @@ An earlier PC was already at 192.168.x.10. That PC did not work. Private and Pub
 ## SQL import
 
 The SQL file used was 2026bernercup.sql. It was imported with Import Database-Backup from SQL file. A finished import log said Server localhost, Port 27000, DB-Username root, and created database 2026bernercup.
+
+The venue import was not captured. On SET 12.2.0 build 3 (local test, 6 Oct 2026) the import was repeated on a local H2 copy. Import Database-Backup from SQL file is the fourth option in the connection window.
+
+![Import Database-Backup from SQL file](img/open-sql-backup/03-import-radio.png)
+
+When the import is done, SET shows "Process finished!". Click OK.
+
+![Process finished!, OK](img/open-sql-backup/09-process-finished.png)
+
+The import log behind it read Server localhost and Port 9092, because the local copy uses H2. At the venue the port was 27000. The log ends with "Finished import!". The file path is blurred.
+
+![Import log, Server localhost, Port 9092, Finished import!](img/local-server/05-import-log-finished.png)
+
+The full steps are on [Open a SET database backup](open-sql-backup.md).
