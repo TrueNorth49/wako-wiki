@@ -11,7 +11,7 @@ Tatami draws: [Tatamis](tatamis.md).
 ## Draws
 
 1. In the Main Tree Menu, right-click Draw, then click Generate draws by selection. The Generate draws window opens.
-2. Manually select every relevant category. Ring categories start with 05.
+2. Manually select every ring category. Ctrl+click adds a row to the selection. The process document says ring categories start with 05. On the Berner Cup 2026 data they are the 06 LK and 07 K1 categories.
 3. That covers LC, FC, and K1.
 
 ![Draw, Generate draws by selection](img/ring/01a-generate-draws-by-selection.png)
@@ -19,6 +19,16 @@ Tatami draws: [Tatamis](tatamis.md).
 Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026). Found instead: the Generate draws list on this copy has no 05 rows. It goes from 03 KL straight to 06 LK, then 07 K1. Nothing was generated in the test.
 
 ![Generate draws, the list goes from 03 KL to 06 LK](img/ring/01b-generate-draws-no-05.png)
+
+In the test three ring rows were Ctrl-clicked: 06 LK 376 S M -91 kg, 07 K1 390 YJ M -57 kg and 07 K1 428 S M -60 kg.
+
+![Generate draws, three 06 LK and 07 K1 rows selected](img/ring/01c-ring-rows-selected.png)
+
+In the Generate draws window, OK shows without maximizing. OK was only hovered, not clicked.
+
+![Generate draws, OK](img/ring/01d-generate-draws-ok.png)
+
+Do not confuse this with the plain "Generate draws" item in the same menu. That one opens a window titled "Draw" with an "Individual categories" dropdown for one category. It is the item used in [Extra match](extra-match.md).
 
 ## Draw records
 
@@ -29,6 +39,14 @@ Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026). Found instead: the Gen
 ![Draw record, Save draws as draw records by selection](img/ring/02a-save-draws-by-selection.png)
 
 ![Save all draws as draw records, maximize button](img/ring/02b-save-all-draws-window.png)
+
+In the test three ring rows were Ctrl-clicked: 06 LK 383 S F -70 kg, 07 K1 392 YJ M -63,5 kg and 07 K1 430 S M -67 kg. At normal size there is no OK button.
+
+![Save all draws as draw records, three rows selected, no OK yet](img/ring/02c-ring-rows-selected.png)
+
+Maximized, the bottom bar shows OK and Refresh. OK was only hovered.
+
+![Maximized, OK](img/ring/02d-maximized-ok.png)
 
 In the test the window was closed without saving.
 
@@ -129,6 +147,16 @@ At normal size most of these labels are cut off.
 ![Main Options, maximized](img/ring/04h-main-options.png)
 
 If a fight is definitely not happening, delete the draws and the draw records. The match list updates on its own. If it does not, use Delete matches on the match calling table.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): under Draw, right-click the category, then Delete. Under Draw record, right-click the same category, then Delete.
+
+![Draw, category menu, Delete](img/ring/06a-draw-category-delete.png)
+
+![Draw record, category menu, Delete](img/ring/06b-draw-record-category-delete.png)
+
+Both ask "Do you really want to delete this category?" with the category name, in a box titled "Attention!". The text says category in both places. In the test No was clicked both times, so nothing was deleted and what Yes removes was not checked.
+
+![Do you really want to delete this category?](img/ring/06c-delete-category-question.png)
 
 On build 3, select the fight in the match list, then click Delete matches in the Main Options panel. A box titled "Delete matches" asks "Do you really want to delete all selected matches?" Click Yes. In the test, number 29 left the list.
 
