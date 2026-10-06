@@ -24,6 +24,7 @@ Open [index.html](index.html) for the sidebar wiki. GitHub Pages can serve this 
 - [Wrong name monitor (workaround)](wrong-name-monitor.md)
 - [Printing and publishing the match list](printing.md)
 - [Results](results.md)
+- [Upload results to SET Online](upload-online.md)
 
 ## Other
 
