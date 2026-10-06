@@ -17,3 +17,5 @@ Backup Database is open. Backup online database and Backup save directory are on
 ## On the website
 
 Event, then Export event data, then Export as SQL.
+
+To open a backup on another PC, see [Open a SET database backup](open-sql-backup.md).
