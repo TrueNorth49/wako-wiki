@@ -10,6 +10,12 @@ The port was 27000.
 
 The database name that opened 7. Berner Cup 2026 was 2026bernercup. A database field of mydb opened 1. Alpen Open 2026 instead. Confirm the event list says 7. Berner Cup 2026 before continuing.
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the window title does not show the event name. Check the top node of Panels, then Main Tree Menu. On the local copy it read 7. Berner Cup 2026 (local). The EVENT column of the Events panel shows the same name, cut off as 7. Berner C...
+
+![Main Tree Menu top node with the event name](img/local-server/01-main-tree-root.png)
+
+![Events panel, EVENT column](img/local-server/02-events-panel.png)
+
 ## Server PC
 
 On the server PC (Haupttisch), Server was localhost. The DB user was root. The SET login that worked on the scale PC was the username from the database backup. That login was not the Windows user and was not the admin login.
