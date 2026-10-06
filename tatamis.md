@@ -18,6 +18,10 @@ The window is titled "Generate draws". At the bottom are "Select draws not done"
 
 If draws already exist, use "Select draws not done" so you do not overwrite or regenerate them.
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): every draw on the copy already existed, so "Select draws not done" highlighted no rows. No tatami rows were selected in the test.
+
+![Select draws not done, no rows highlighted](img/tatamis/01c-select-draws-not-done.png)
+
 ## Draw records
 
 Right-click "Draw record", then "Save draws as draw records by selection". Select the tatami categories.
