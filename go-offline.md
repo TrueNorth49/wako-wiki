@@ -66,15 +66,23 @@ Administration Mode shows at the start of the title bar and on the Welcome panel
 
 ### User
 
-Open the User tab. In the User section, click User / Password.
+Open the User tab.
 
-![User tab and User / Password](img/go-offline/03-user-tab.png)
+![User tab in the Settings tab bar](img/go-offline/03-user-tab.png)
+
+In the User section, click User / Password.
+
+![User / Password in the User section](img/go-offline/03b-user-password.png)
 
 A dialog titled User-Management opens. Its heading is Add new user/Change password. It has two checkboxes, Change password and Add new user, and the buttons OK and Close.
 
-Tick Add new user. The login is the one from the backup. The form behind that checkbox was not opened, and no user was created.
+Tick Add new user. The login is the one from the backup.
 
 ![User-Management, Add new user](img/go-offline/04-user-management.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): ticking Add new user only ticked the checkbox. No form fields appeared. Unticking it closed the dialog. OK was not clicked and no user was created.
+
+![Add new user ticked, no form fields](img/go-offline/04b-add-new-user-ticked.png)
 
 ### Seeding
 
@@ -102,14 +110,32 @@ Open the Monitor / DTM Area Name Replace tab.
 
 ![Monitor / DTM Area Name Replace tab](img/go-offline/09-area-tab.png)
 
-Fill Name Original and Name New, then Add. The process document example is Ring 1 replaced with Tatami 1. The fields are Name Original: and Name New: along the bottom, with Add at the bottom right and Remove at the bottom left. The list was empty. Nothing was added. The venue list at the Berner Cup was not empty. See [Wrong name monitor (workaround)](wrong-name-monitor.md).
+Fill Name Original and Name New, then Add. The process document example is Ring 1 replaced with Tatami 1. The fields are Name Original: and Name New: along the bottom, with Add at the bottom right and Remove at the bottom left. The venue list at the Berner Cup was not empty. See [Wrong name monitor (workaround)](wrong-name-monitor.md).
 
 ![Name Original, Name New, and Add](img/go-offline/10-area-fields.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the list was empty on the local copy. Ring 1 went into Name Original and Tatami 1 into Name New. Then Add.
+
+![Name Original Ring 1, Name New Tatami 1, Add](img/go-offline/10a-area-fields-filled.png)
+
+After Add the list showed one row, Ring 1:Tatami 1.
+
+![The new row Ring 1:Tatami 1](img/go-offline/10b-area-row-added.png)
+
+To take a row off, select it and click Remove. The test row was removed this way.
+
+![Row selected, Remove](img/go-offline/10c-area-row-remove.png)
+
+After Remove the list was empty again and Remove was greyed out.
+
+![Empty list, Remove greyed out](img/go-offline/10d-area-list-empty-again.png)
 
 ### Close Settings
 
 The Settings window has no Cancel or Close button. Close it with the X in its title bar.
 
 ![X in the Settings title bar](img/go-offline/11-settings-close-x.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): closing with the X gave no save prompt.
 
 Wrong name: monitor on the display is a separate workaround: [Wrong name monitor (workaround)](wrong-name-monitor.md).

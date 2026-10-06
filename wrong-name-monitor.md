@@ -16,6 +16,10 @@ On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Monitor / DTM Area Name Repl
 
 ![Monitor / DTM Area Name Replace, empty list on the local copy](img/wrong-name-monitor/07-area-list-empty.png)
 
+The venue list itself was not rebuilt on the local copy. The next shot shows the format of one row after Add, using the process document example Ring 1 replaced with Tatami 1. The test row was removed again afterwards.
+
+![Example row Ring 1:Tatami 1 in Monitor / DTM Area Name Replace](img/wrong-name-monitor/08-area-list-example-row.png)
+
 The screen shows the Wrong name: monitor dialog and the area-name replace list.
 
 ![Wrong name: monitor dialog and the area-name replace list](img/wrong-name-dialog.jpg)
