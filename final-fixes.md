@@ -12,6 +12,12 @@ In the Main Tree Menu, right-click "Individual / Team Entries". The same menu ha
 
 To move athletes into a new category, follow [Extra match](extra-match.md).
 
+"Delete" opens the "Delete entry" window. It has a search field, a category list, "Select all", "OK" and "Refresh".
+
+![Delete entry window, OK](img/final-fixes/04-delete-entry-window.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): OK was not clicked, so no entry was deleted.
+
 ## Find who has not shown up
 
 Also check who has not shown up. They are still Pending. Clarify why.
@@ -31,6 +37,10 @@ Athlete names and weights are blurred in this screenshot.
 - Double-check categories that still have only one athlete.
 
 The process document called this "cross-block". That is not a SET label. The SET item is "Cross / Undo cross through competitor on this table".
+
+To double-check categories with only one athlete, open "Overviews / Statistics", then "Categories and entries" (Ctrl+4), and click the "Entries" header to sort. See [Fixes after registration closes](fixes.md?id=find-categories-with-only-one-entry).
+
+![Categories and entries sorted by Entries](img/final-fixes/05-categories-and-entries-sorted.png)
 
 ## Cross through an athlete
 

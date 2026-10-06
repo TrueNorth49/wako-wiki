@@ -34,6 +34,24 @@ To open Weight / size control, open Panels, then Main Tree Menu. Right-click Ind
 
 The QR reader default action that matched the Sport Data page was Weight / size control connected with the scale. Keep that window open. A scan then opens the athlete. Access Control is the wrong window.
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the menu is "QRCode Reader". It has "QRCode Reader from Barcode Scanner" and "QRCode Reader from Webcam". Choose "QRCode Reader from Barcode Scanner".
+
+![QRCode Reader, QRCode Reader from Barcode Scanner](img/scale-troubleshooting/11-qrcode-reader-menu.png)
+
+The window has one button per mode, for example "Access Control", "Entries", "Weight / size control" and "Weight / size control - Connected with Scale".
+
+![Weight / size control - Connected with Scale button](img/scale-troubleshooting/12-barcode-scanner-modes.png)
+
+At the bottom is "Default Action". Pick "Weight / size control - Connected with Scale", not "Access Control".
+
+![Default Action, Weight / size control - Connected with Scale](img/scale-troubleshooting/13a-default-action-scale.png)
+
+![Default Action, Access Control is the wrong choice](img/scale-troubleshooting/13b-default-action-access-control.png)
+
+The field then reads "Weight / size control - Connected with Scale". "Exit Barcode Scanner Mode" is below it.
+
+![Default Action set, Exit Barcode Scanner Mode](img/scale-troubleshooting/14-default-action-set.png)
+
 The console showed NO EOT found while the scanner was on the wrong port. After the COM swap it showed BarCode Data Received and BarCode EOT found.
 
 ## Weights that do not stay saved
