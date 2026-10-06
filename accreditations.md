@@ -20,7 +20,11 @@ Further down are "Accreditation Settings" and the "Accreditation from CSV" butto
 
 ![Accreditation Settings, Accreditation from CSV](img/accreditations/01c-accreditation-settings-csv.png)
 
-Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a "Generate Accreditation" or "Send Accreditation" button, or Athlete, Coach, Referee and Officials as choices in one dialog. Found instead: the separate "(by Club)" and "(by Person)" links above, one per group. The venue photo below shows the same links. Sending online and by email was not tested, because it goes online.
+Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a "Generate Accreditation" or "Send Accreditation" button, or Athlete, Coach, Referee and Officials as choices in one dialog. Found instead: the separate "(by Club)" and "(by Person)" links above, one per group. The venue photo below shows the same links.
+
+On the same local test, "Overviews / Statistics", then "All entries", opens "Athlete Entries". Its "Edit" menu has "Reset Accreditation Print Status". It had no "Accreditation - send by email" item. SET shows that item only when it runs in online server mode, and the local copy was offline. The menu ran past the bottom of the screen after "Teams", so the items below it were not seen. No send path was seen, and nothing was sent.
+
+![Athlete Entries, Edit, Reset Accreditation Print Status](img/accreditations/03-athlete-entries-edit-menu.png)
 
 ## Email settings (SMTP)
 
