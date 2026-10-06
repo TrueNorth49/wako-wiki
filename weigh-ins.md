@@ -6,6 +6,10 @@ On the day of the event, or the day before, athletes come to weigh-in.
 
 Ideally everyone is weighed and marked in the system as weighed, and they fit the category they registered in.
 
+No venue weigh-in was captured. On SET 12.2.0 build 3 (local test, 6 Oct 2026) the footer of Weight / size control counts the statuses, for example P: 11 (4%) and W: 223 (95%).
+
+![Status counts P and W](img/scale-troubleshooting/09-status-footer.png)
+
 If someone is overweight, decide case by case:
 
 - Leave them rejected. They do not fight.
@@ -89,5 +93,21 @@ In the same right-click menu on "Individual / Team Entries", choose "Move entrie
 The window has "Take from:", "Move to:", the "Copy entries (keep entries in old category)" checkbox and a "Move" button.
 
 ![Take from, Move to, Copy entries](img/weigh-ins/06-move-entries-window.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the controls look like this up close. Open the "Take from:" dropdown and pick the source category.
+
+![Take from: dropdown](img/extra-match/07-take-from.png)
+
+Open the "Move to:" dropdown and pick the target category.
+
+![Move to: dropdown](img/extra-match/08-move-to.png)
+
+"Copy entries (keep entries in old category)" keeps the athlete in the old category as well. The Extra match page checks it.
+
+![Copy entries (keep entries in old category)](img/extra-match/09-copy-entries.png)
+
+"Move" is at the bottom of the window.
+
+![Move button](img/extra-match/11a-move.png)
 
 The steps are on the Extra match page under [B. Copy the two athletes](extra-match.md?id=b-copy-the-two-athletes).

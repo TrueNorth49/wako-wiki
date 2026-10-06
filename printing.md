@@ -58,6 +58,12 @@ The upload was not tested on 6 Oct 2026, because it goes online.
 
 4. Go back to the draw and fix it.
 
+In the tree, under Draw, right-click the category, then click Open draw / Edit. To change the order, click Edit, then Manually changes. The full steps are in [Match the ring plan](ring.md?id=match-the-ring-plan).
+
+![Draw, Open draw / Edit](img/ring/03a-open-draw-edit.png)
+
+![Edit, Manually changes](img/ring/03b-manually-changes.png)
+
 5. Return to this list and insert it again at the right number. Shift the others.
 
 "Edit number" is in the same "Main Options" bar, with "Show in tree", "Reset match", "Draw record", "Delete missing n..." (cut off on screen) and "Refresh / Reset". "Assign number" and "Unset number" are under the draw record list on the left. Re-inserting at a number was not tested.
