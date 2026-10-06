@@ -34,7 +34,12 @@ Open [index.html](index.html) for the sidebar wiki. GitHub Pages can serve this 
 
 These were tried and the old menu labels were not on his build. Do not document them as instructions until a path is confirmed.
 
-- Athletes alone in a category. The v10 report "Entries in Categories 1 Athlete" is not in v12.2. Panels has no Reports. It is not under Overviews / Statistics or Analysis.
+- Athletes alone in a category. The v10 report "Entries in Categories 1 Athlete" is not in v12.2. On SET 12.2.0 build 3 (local test, 6 Oct 2026): Overviews / Statistics has no Entries in Categories and no one-athlete report. The nearest items are Categories and entries and Competitors in categories. Analysis is an item under Panels. There is no Analysis menu in the menu bar. Reports was not seen in the visible part of Panels. The Panels list runs past the bottom of the screen.
+
+  ![Overviews / Statistics, nearest items](img/readme/01-overviews-statistics.png)
+
+  ![Panels, Analysis](img/readme/02-panels-analysis.png)
+
 - Email every club from the Berner Cup web event manager. "Email message to participating clubs" was not on that dashboard.
 
 Also still open: the concrete check-in process at entry. QR scanning, and how someone is marked approved, is not defined yet.

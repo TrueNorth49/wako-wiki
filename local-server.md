@@ -8,7 +8,19 @@ The working database was not MariaDB. SET was set to Use local / network databas
 
 The port was 27000.
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Database Type offers only H2 - Integrated DB Server and MYSQL - External DB Server. The local copy uses H2 - Integrated DB Server. That is the local copy's setting. The venue setting stays MYSQL - External DB Server on port 27000.
+
+![Use local / network database and Database Type](img/local-server/00-local-network-database-type.png)
+
+![Database Type values](img/local-server/00b-database-type-options.png)
+
 The database name that opened 7. Berner Cup 2026 was 2026bernercup. A database field of mydb opened 1. Alpen Open 2026 instead. Confirm the event list says 7. Berner Cup 2026 before continuing.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the window title does not show the event name. Check the top node of Panels, then Main Tree Menu. On the local copy it read 7. Berner Cup 2026 (local). The EVENT column of the Events panel shows the same name, cut off as 7. Berner C...
+
+![Main Tree Menu top node with the event name](img/local-server/01-main-tree-root.png)
+
+![Events panel, EVENT column](img/local-server/02-events-panel.png)
 
 ## Server PC
 

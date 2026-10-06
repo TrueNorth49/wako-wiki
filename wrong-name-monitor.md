@@ -12,6 +12,10 @@ The monitors kept cycling through the tatamis and the ring while that dialog was
 
 Settings, Monitor / DTM Area Name Replace, already listed Ring 5 through Ring 1 mapped to RING and Tatami 4 through Tatami 1. That list was correct. It did not contain monitor. Leave that list as it is.
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Monitor / DTM Area Name Replace list was empty on the local copy. The venue list above is the one that matters at the event.
+
+![Monitor / DTM Area Name Replace, empty list on the local copy](img/wrong-name-monitor/07-area-list-empty.png)
+
 The screen shows the Wrong name: monitor dialog and the area-name replace list.
 
 ![Wrong name: monitor dialog and the area-name replace list](img/wrong-name-dialog.jpg)
@@ -32,17 +36,31 @@ Panels is open. SET Monitor is in that menu.
 
 ![Panels, SET Monitor](img/panels-lists-caller.jpg)
 
+![Panels, SET Monitor](img/wrong-name-monitor/01-panels-set-monitor.png)
+
+![SET Monitor tab at the bottom](img/wrong-name-monitor/02-set-monitor-tab.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the same two ways in were confirmed.
+
 On that window, Client Name was blank, then saved as monitor1. The word monitor in the window title is not the client name.
 
 Client Name is monitor. Search, Remove, both Refresh buttons, and Close are on the window.
 
 ![Client Name monitor, Search, Remove, both Refresh buttons, and Close](img/monitor-client-name.jpg)
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Client Name section is at the top of SET Monitor. Its value on the local copy was Ring. Below it is SET Client Monitor with SET Client ... and Delete all Cl... (both cut off on screen).
+
+![Client Name](img/wrong-name-monitor/03-client-name.png)
+
 Client Name is monitor1. The dropdown lists Ring 1 to Ring 5.
 
 ![Client Name monitor1, dropdown Ring 1 to Ring 5](img/monitor-client-monitor1.jpg)
 
 The Ring dropdown separately listed Ring 1, Tatami 1, Ring 2, Ring 3, Ring 4, Ring 5, and monitor. Remove takes monitor off the list. Search puts monitor back. After Remove, without Search, the list was only Ring 1 through Ring 5.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Ring section has Add Ring with Add, then Search, the Ring dropdown, and Remove. The dropdown was empty on the local copy and had no monitor entry. Search and Remove were not pressed.
+
+![Search and Remove in the Ring section](img/wrong-name-monitor/04-search-remove.png)
 
 Pressing SET DTM Monitor (Refresh) or SET Activity Monitor (Refresh) brought the same Wrong name: monitor dialog back. That happened even when the dropdown no longer showed monitor.
 
@@ -65,3 +83,11 @@ SET Activity Monitor (Refresh) is the fight and score screen. SET DTM Monitor (R
 The score screen still flashes between tatamis, for example between tatami 1 and tatami 2. Activity Monitor must still be open in the background. It had not been closed. The Close button under Activity Monitor is the control on the SET Monitor window, directly under SET Activity Monitor (Refresh). Closing the settings panel does not stop the score screen.
 
 The Wrong name: monitor dialog still returns when the rotation reaches the stored name monitor. Click OK. That is not fixed.
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the Activity Monitor button reads SET Activity... on screen. Its tooltip is SET Activity Monitor. Close is directly under it in the Activity Monitor section. The DTM Monitor section has SET DTM Monitor (Refresh). No refresh button was pressed and no Wrong name dialog came up, so the venue photos above are the only record of that dialog.
+
+![SET Activity... with tooltip SET Activity Monitor](img/wrong-name-monitor/05a-activity-tooltip.png)
+
+![SET Activity... and Close](img/wrong-name-monitor/05b-activity-close.png)
+
+![SET DTM Monitor (Refresh)](img/wrong-name-monitor/06-dtm-refresh.png)
