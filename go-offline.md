@@ -22,6 +22,10 @@ Start SET. On 6 Oct 2026 (build 3, local test) two windows came before the conne
 
   ![Select network interface, OK](img/go-offline/01a-select-network-interface.png)
 
+  The dropdown lists the network interfaces of the PC with their addresses. On SET 12.2.0 build 3 (local test, 6 Oct 2026) it listed tailscale0, docker0 and enp0s4. The addresses are blurred in the screenshot.
+
+  ![Network interface list, addresses blurred](img/go-offline/01a2-network-interface-list.png)
+
 - SET OVR License Grant and Restriction. Click OK.
 
   ![SET OVR License Grant and Restriction, OK](img/go-offline/01b-license.png)
@@ -30,29 +34,63 @@ The connection window is titled with the SET version, for example SET v 12.2.0 b
 
 Choose **Use local / network database**.
 
-![Use local / network database and Database Type](img/go-offline/01c-connection-settings.png)
+![Use local / network database](img/go-offline/01c2-use-local-radio.png)
+
+![Connection Settings, whole window](img/go-offline/01c-connection-settings.png)
 
 The other choices on that window are Use integrated database, Use SET-Online database, and Import Database-Backup from SQL file.
 
-With local / network selected, the form shows ONLINE System / TYPE, Database Type, Database, Server, Port, DB-Username, DB-Password, Test connection, and Connect. Kickboxing is `www.sportdata.org/kickboxing`. ONLINE System / TYPE shows Kickboxing [www.sportdata.org/kickboxing]. Database has a Local H2 Databases... dropdown next to the name field. Below the fields are Remember password on next login, Language, License Manager, and Settings with Export, Import, and Remote Import.
+With local / network selected, the form shows the fields below, from top to bottom. The close-ups are from SET 12.2.0 build 3 (local test, 6 Oct 2026). The fields were hovered, not changed, except Database Type in the test on [Local server without MariaDB](local-server.md).
 
-Database Type offers only two values: H2 - Integrated DB Server and MYSQL - External DB Server. At the Berner Cup the venue used MYSQL - External DB Server on port 27000. See [Local server without MariaDB](local-server.md). On SET 12.2.0 build 3 (local test, 6 Oct 2026): the restored local copy uses H2 - Integrated DB Server. Server showed localhost and Port showed 3306, greyed out with H2. These are local defaults, not a correction of the venue port 27000.
+ONLINE System / TYPE shows Kickboxing [www.sportdata.org/kickboxing]. Kickboxing is `www.sportdata.org/kickboxing`.
+
+![ONLINE System / TYPE, Kickboxing](img/go-offline/01c3-online-system-type.png)
+
+Database Type offers only two values: H2 - Integrated DB Server and MYSQL - External DB Server. At the Berner Cup the venue used MYSQL - External DB Server on port 27000. See [Local server without MariaDB](local-server.md). On SET 12.2.0 build 3 (local test, 6 Oct 2026): the restored local copy uses H2 - Integrated DB Server.
 
 ![Database Type values](img/go-offline/01d-database-type.png)
 
-Create DB User for remote access stayed greyed out. It was greyed out again on 6 Oct 2026. Do not use the names already in the boxes. They are whatever this install last stored, not the event setup. Click Test connection before Connect.
+Database holds the database name. Next to it is the "Local H2 Databases..." dropdown. On the local copy the name was bernercup2026_b2.
+
+![Database and Local H2 Databases...](img/go-offline/01c4-database-local-h2.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Server showed localhost and Port showed 3306, greyed out with H2. These are local defaults, not a correction of the venue port 27000.
+
+![Server localhost, Port 3306 greyed out](img/go-offline/01c5-server-port.png)
+
+DB-Username showed root, greyed out with H2. Next to it is DB-Password. Below them is "Remember password on next login", ticked on the local copy. The DB-Password field is blurred in the screenshot.
+
+![DB-Username, DB-Password, Remember password on next login](img/go-offline/01c6-db-username-password.png)
+
+Language showed english. Below it is the "License Manager" button.
+
+![Language english, License Manager](img/go-offline/01c7-language-license.png)
+
+Settings has three buttons: Export, Import and Remote Import. None of them was clicked in the test.
+
+![Settings: Export, Import, Remote Import](img/go-offline/01c8-settings-export-import.png)
+
+Create DB User for remote access stayed greyed out. It was greyed out again on 6 Oct 2026 with H2. With MYSQL - External DB Server it becomes active. Do not use the names already in the boxes. They are whatever this install last stored, not the event setup. Click Test connection before Connect.
 
 ![Test connection, Create DB User for remote access (greyed out), Connect](img/go-offline/01e-connection-buttons.png)
 
-On 3 Oct 2026, this session stopped before Connect, so a finished local login is not confirmed here.
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Test connection with H2 - Integrated DB Server and bernercup2026_b2 opened an "Attention!" box: "Connecting the database was successful". Click OK, then Connect.
+
+![Attention!, Connecting the database was successful, OK](img/go-offline/01e2-test-connection-ok.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): Connect with H2 - Integrated DB Server opened the SET Login window. The full local login is below.
 
 **Warning: do not pick Use integrated database to reopen a restored copy.** On SET 12.2.0 build 3 (local test, 6 Oct 2026): picking Use integrated database greys out the database fields. Connect then opens SET's default integrated database, not the restored event. Logging in with the event's user then fails with Wrong SET-Username or SET-Password!. To reopen a restored local copy, keep Use local / network database with H2 - Integrated DB Server and the copy's database name.
 
 ![Use integrated database greys out the database fields](img/go-offline/01f-integrated-greyed.png)
 
-The SET Login window has SET-Username, SET-Password, Remember password on next login, and the modes Registration Mode, RING Mode, Administration Mode, Referee Mode, and Terminal Mode, with Log in and Cancel. Choose Administration Mode for the checks below.
+The SET Login window has SET-Username, SET-Password, Remember password on next login, and the modes Registration Mode, RING Mode, Administration Mode, Referee Mode, and Terminal Mode, with Log in and Cancel. Choose Administration Mode for the checks below, then click Log in. On SET 12.2.0 build 3 (local test, 6 Oct 2026): the username and password were already filled in because "Remember password on next login" was ticked at the last login. The login fields are blurred in the screenshot.
 
-![SET Login, Log in](img/go-offline/01g-set-login.png)
+![SET Login, Administration Mode, Log in](img/go-offline/01g2-set-login-admin.png)
+
+The "Event data" window opens. Click the event row, here 7. Berner Cup 2026 (2026.10.04, SWITZERLAND, Id 2871), then click Next. The main window opens with Administration Mode at the start of the title bar. The Main Tree Menu shows 7. Berner Cup 2026 (local).
+
+![Event data, 7. Berner Cup 2026, Next](img/go-offline/01h-event-data.png)
 
 ## Checks from the process document
 
