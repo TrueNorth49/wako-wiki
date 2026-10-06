@@ -24,11 +24,19 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ![Attention box, OK](img/open-sql-backup/04-attention-ok.png)
 
-5. Click the Database field and type a new name for the imported database, for example bernercup2026_import. The name must not exist yet. If it exists, SET stops with "Database exists already!" The name must not contain the word test. SET stops with: Database: Input "<name>" contains invalid chars "test"!
+5. Click the Database field and type a new name for the imported database, for example bernercup2026_import. The name must not exist yet. SET has a "Database exists already!" message for a name that is already used. The name must not contain the word test. SET stops with: Database: Input "<name>" contains invalid chars "test"!
 
 ![Database name](img/open-sql-backup/05-database-name.png)
 
 ![Attention box, invalid chars test](img/open-sql-backup/05b-invalid-chars-test.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the existing name bernercup2026_b2 was typed with "Import Database-Backup from SQL file" selected, then Connect was clicked.
+
+![Import Database-Backup from SQL file, existing name bernercup2026_b2](img/open-sql-backup/05c-existing-name.png)
+
+SET did not show "Database exists already!" at that point. The "Load" file picker opened instead, with Files of Type: SQL/H2 Files. Cancel was clicked. So the name check was not reached before the file picker in this test, and when the message appears is not confirmed. The folder and file list are blurred in the screenshot.
+
+![Load, Files of Type SQL/H2 Files, Cancel](img/open-sql-backup/05d-load-sql-h2.png)
 
 6. Click Connect. A "Load" file window opens.
 
@@ -76,7 +84,7 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ## If it fails
 
-SET stops with "Database exists already!" if the name is already used. Pick a name that does not exist yet.
+SET has the message "Database exists already!" for a name that is already used. On SET 12.2.0 build 3 (local test, 6 Oct 2026) it did not appear before the Load file picker, and the test was cancelled there, so the point where it appears is not confirmed. Pick a name that does not exist yet.
 
 SET stops with Database: Input "<name>" contains invalid chars "test"! if the name contains the word test. Click OK and pick a name without test, for example bernercup2026_import.
 
