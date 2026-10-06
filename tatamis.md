@@ -18,9 +18,13 @@ The window is titled "Generate draws". At the bottom are "Select draws not done"
 
 If draws already exist, use "Select draws not done" so you do not overwrite or regenerate them.
 
-On SET 12.2.0 build 3 (local test, 6 Oct 2026): every draw on the copy already existed, so "Select draws not done" highlighted no rows. No tatami rows were selected in the test.
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): every draw on the copy already existed, so "Select draws not done" highlighted no rows.
 
 ![Select draws not done, no rows highlighted](img/tatamis/01c-select-draws-not-done.png)
+
+To pick the categories yourself, click the first row, then hold Ctrl and click each further row. Ctrl+click selects several rows. On SET 12.2.0 build 3 (local test, 6 Oct 2026) the window showed "Number: 231". "01 PF 021 YC M -37 kg" was clicked, then "01 PF 040 OC M -69 kg" and "01 PF 072 S M -69 kg" were Ctrl+clicked. All three rows are highlighted below. OK is the button that generates the draws for the selected rows. In the test OK was not clicked. The window was closed with X and nothing was generated.
+
+![Three rows selected with Ctrl+click, OK](img/tatamis/01d-ctrl-click-three-rows.png)
 
 ## Draw records
 

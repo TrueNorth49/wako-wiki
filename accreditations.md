@@ -12,6 +12,14 @@ Open Panels, then "Accreditation".
 
 ![Panels, Accreditation](img/accreditations/01a-panels-accreditation.png)
 
+Tip: if Panels, then "Accreditation" seems to do nothing, the panel may be docked in a very narrow column. On SET 12.2.0 build 3 (local test, 6 Oct 2026) it sat between Events / Welcome and Backup Database and was nearly invisible.
+
+![Accreditation panel docked in a narrow column](img/accreditations/01d-accreditation-narrow-column.png)
+
+Click the icon in the header of that column. A menu with "Maximize" and "Close" opens. Choose "Maximize" to open the panel full size.
+
+![Header menu, Maximize](img/accreditations/01e-header-menu-maximize.png)
+
 The "Accreditation" section has "Accreditation Participant (by Club)", "Accreditation Coach (by Club)", "Accreditation Referee (by Club)", "Accreditation Officials (by Club)", "Accreditation (by Club)", "Accreditation Template", the same four "(by Person)" links, and "Press-Accreditation (by Person)".
 
 ![Accreditation links by Club and by Person](img/accreditations/01b-accreditation-links.png)
@@ -20,7 +28,7 @@ Further down are "Accreditation Settings" and the "Accreditation from CSV" butto
 
 ![Accreditation Settings, Accreditation from CSV](img/accreditations/01c-accreditation-settings-csv.png)
 
-Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a "Generate Accreditation" or "Send Accreditation" button, or Athlete, Coach, Referee and Officials as choices in one dialog. Found instead: the separate "(by Club)" and "(by Person)" links above, one per group. The venue photo below shows the same links. The only similar label in the panel is the checkbox "Ask for Access Areas before generating Accreditation". See "Accreditation from CSV" below.
+Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a "Send Accreditation" button, or Athlete, Coach, Referee and Officials as choices in one dialog. Found instead: the separate "(by Club)" and "(by Person)" links above, one per group. The venue photo below shows the same links. "Generate Accreditation" does exist, but only in the "Accreditation from CSV" window after a CSV file is loaded. See "Accreditation from CSV" below.
 
 On the same local test, "Overviews / Statistics", then "All entries", opens "Athlete Entries". Its "Edit" menu has "Reset Accreditation Print Status". It had no "Accreditation - send by email" item. SET shows that item only when it runs in online server mode, and the local copy was offline. The menu ran past the bottom of the screen after "Teams", so the items below it were not seen. No send path was seen, and nothing was sent.
 
@@ -54,9 +62,47 @@ On SET 12.2.0 build 3 (local test, 6 Oct 2026): "Generate QR code for access con
 
 ![Ask for Access Areas before generating Accreditation](img/accreditations/05a-ask-access-areas.png)
 
-"Accreditation from CSV" opens a "Load" file dialog straight away, with "Files of Type: CSV Files". In the test Cancel was clicked, so no CSV file was loaded. No "Generate Accreditation" button showed on this path. SET's code has a "Generate Accreditation" label in the window that previews a loaded CSV file. That window was not seen. The folder list is blurred in the screenshot.
+"Accreditation from CSV" opens a "Load" file dialog straight away, with "Files of Type: CSV Files". The folder list is blurred in the screenshot.
 
 ![Load, Files of Type CSV Files](img/accreditations/05b-csv-load-dialog.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) a test file with three fake people was loaded. Choose the CSV file and click Open. The folder and the file path are blurred in the screenshot.
+
+![Load, CSV Files, Open](img/accreditations/05c-csv-load-test-file.png)
+
+The "Accreditation from CSV" window opens. It shows the file as a table with one column per field. In the test the columns were name, club, nation, role, roletype, categories, dob, event, fullareanames, wkfid and eventdate.
+
+![Accreditation from CSV, columns](img/accreditations/05d-csv-preview-columns.png)
+
+At the bottom it shows the row count, here "Number of records: 3", and the "Generate Accreditation" button.
+
+![Number of records: 3, Generate Accreditation](img/accreditations/05e-generate-accreditation.png)
+
+"Generate Accreditation" opens a "Print Preview" window with the menus Report, Export, View and Help. In the test it had 6 pages for 3 people. Page 1/6 was the card for TEST PERSON A. Page 2 was blank.
+
+![Print Preview, card for TEST PERSON A, 1/6](img/accreditations/05f-print-preview-card-a.png)
+
+The next page arrow moves through the pages. Page 3/6 was the card for TEST PERSON B. Nothing was printed or exported in the test.
+
+![Print Preview, card for TEST PERSON B, 3/6](img/accreditations/05g-print-preview-card-b.png)
+
+### CSV format
+
+Source: SET 12.2.0 build 3 program files and the local test on 6 Oct 2026.
+
+- Separate the values with semicolons (;).
+- Save the file as UTF-8 without BOM. With a BOM the first column name is not read as name.
+- The first row holds the column names in lowercase. They must match the field names on the card template: name, club, nation, role, roletype, categories, dob, event, fullareanames, wkfid, eventdate.
+- Leave out the picture, qrcode and logo columns. A URL in one of them is fetched from the internet.
+- "Generate Accreditation" only opens a print preview. It writes nothing to the database and sends nothing.
+
+Example with fake data:
+
+```
+name;club;nation;role;roletype;categories;dob;event;fullareanames;wkfid;eventdate
+Test Person A;Test Club;XXX;Volunteer;official;;01.01.2000;Test Event;Area 1 - Field of Play;TEST-001;1 Jan 2099
+Test Person B;Test Club;XXX;Volunteer;official;;02.02.2000;Test Event;Area 2 - Warm-up;TEST-002;1 Jan 2099
+```
 
 ## Email settings (SMTP)
 

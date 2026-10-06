@@ -10,13 +10,21 @@ Source: the Sportdata knowledge base article [Upload draws, timetable & results]
 
 ![Panels](img/upload-online/01-panels-menu.png)
 
-2. Choose "SET Online Kickboxing / Kickboxing Events APP". The panel opens on the right side, headed "SET Online Kickboxing / Kickboxing Events APP". Widen it by dragging its left edge, or double click its title bar to expand it (the knowledge base tip), so the full line texts show.
+2. Choose "SET Online Kickboxing / Kickboxing Events APP". The panel opens on the right side, headed "SET Online Kickboxing / Kickboxing Events APP". Double-click its title bar to widen it, so the full line texts show. This is also the knowledge base tip. Dragging the left edge did not resize it in the local test.
 
 ![Panels, SET Online Kickboxing / Kickboxing Events APP](img/upload-online/02-set-online-kickboxing.png)
 
-On SET 12.2.0 build 3 (local test, 6 Oct 2026) the panel opened already wide on the right side. Its title bar and left edge are boxed below. The drag and the double click were not tried in the test.
+On SET 12.2.0 build 3 (local test, 6 Oct 2026) the panel opened docked on the right side, about half the width of the window. Its title bar and left edge are boxed below.
 
 ![SET Online Kickboxing panel, title bar and left edge](img/upload-online/07-panel-edge-title.png)
+
+In the same test the left edge was dragged to the left. The panel did not resize. The edge is boxed below.
+
+![SET Online Kickboxing panel docked on the right, left edge not resized by dragging](img/upload-online/07b-panel-docked-drag-no-resize.png)
+
+Double-clicking the title bar maximized the panel to the full width of the window. Double-clicking the title bar again restored it to the docked size.
+
+![SET Online Kickboxing panel maximized after a double-click on its title bar](img/upload-online/07c-panel-maximized-double-click.png)
 
 3. Scroll down the panel to the "Results" section. Its sections from top to bottom are "SET Online Kickboxing / Kickboxing Events APP", "SET Liveblog Synchronizer", "Info and PSS Uploader / Match Schedule", "SET DTM Monitor Live Synchronizer", "Activity Monitor Live Synchronizer", "Match Caller Monitor Live Synchronizer", "Match Caller Area Monitor Live Synchronizer", "SET DTM - Dynamic Time Management", "Draw, Draw record, Point Draw...", "Results", "Download online photo" and "Online Downloads Section". The arrow at the right end of each title opens or closes the section.
 
@@ -76,6 +84,38 @@ The by selection line reads "Upload timetable to SET Online on www.sportdata.org
 
 From the knowledge base: On the event page on sportdata.org, click the "Results" button to see the official results. Click "Draws" and then a category to see the uploaded draws. The "Timetable" section shows the uploaded timetable. It shows the individual matches only if the timetable was built from the match caller. If it was built only from categories and pools, the individual matches do not show.
 
+Public sportdata.org page, 6 Oct 2026: after an upload, check on the public event page that the results and the timetable appear. No login is needed. The 7. Berner Cup 2026 event page is https://www.sportdata.org/kickboxing/set-online/veranstaltung_info_main.php?vernr=2871. Its tabs are INFORMATION, DOWNLOADS, CATEGORIES, ENTRIES, WAITING LIST, RESULTS and MEDAL STATISTIC. Above the tabs is a row of icon buttons, among them TIMETABLE.
+
+### Results
+
+Click the RESULTS tab.
+
+![Event page, RESULTS tab](img/upload-online/14a-event-page-results-tab.png)
+
+The results open on a new page (popup_main.php?popup_action=results&vernr=2871) headed RESULTS, with the line "7. Berner Cup 2026 - Results". Choose the category under SELECT A CATEGORY.
+
+![Results, SELECT A CATEGORY](img/upload-online/14b-results-category-picker.png)
+
+Below it, the table shows the category with RANK, NAME, CLUB and COUNTRY for each athlete.
+
+![Results table for one category](img/upload-online/14c-results-table.png)
+
+### Timetable and matchups
+
+Click the TIMETABLE button. Its tooltip is "Timetable".
+
+![Event page, TIMETABLE button](img/upload-online/15a-event-page-timetable-button.png)
+
+The timetable opens at https://www.sportdata.org/setglinc/dtm/dtm_timetable.php?eventid=2871&system=kickboxing. It is headed "Event Schedule", with the event name, the day and one column per ring, Ring 1 to Ring 5.
+
+![Event Schedule, Ring 1 to Ring 5](img/upload-online/15b-timetable-event-schedule.png)
+
+Each block shows the category, the number of entries and the times. Some blocks show single matches, with the two athletes and "vs" between them.
+
+![Timetable blocks with matchups](img/upload-online/15c-timetable-matchups.png)
+
+The public event page has no separate Draws tab or DRAWS button. The matchups show in the Timetable. To check the uploaded draws, open the Timetable.
+
 ## Knowledge base steps
 
 From the knowledge base article, lightly edited:
@@ -96,3 +136,5 @@ From the knowledge base article, lightly edited:
 On SET 12.2.0 build 3 the results line uploads at once, without a confirm step (Lucas).
 
 On SET 12.2.0 build 3 (local test, 6 Oct 2026) the panel title reads "SET Online Kickboxing / Kickboxing Events APP", not "SET Online Test / Test Events App". The SET DTM - Dynamic Time Management lines for step 3 are shown under Timetable above.
+
+Public sportdata.org page, 6 Oct 2026: for steps 10 to 12, TIMETABLE is an icon button above the tabs, there is no DRAWS button, and the results are under the RESULTS tab. See "Check the event page" above.
