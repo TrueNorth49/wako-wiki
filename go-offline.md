@@ -12,21 +12,47 @@ There is no Go offline command in File, Settings, or Tools.
 
 The Settings menu has three items: Settings (Ctrl+P), Email Smtp, and Language.
 
-The local server is the connection window that opens when SET starts. Red boxes mark the control. The connection screenshot below uses a red ring.
+The local server is the connection window that opens when SET starts. Red boxes mark the control.
 
 ## Connect to the local database
 
-Start SET. After the license, the window is Connection Settings.
+Start SET. On 6 Oct 2026 (build 3, local test) two windows came before the connection window:
+
+- Select network interface, with a network dropdown, Do not ask again, and OK. Click OK.
+
+  ![Select network interface, OK](img/go-offline/01a-select-network-interface.png)
+
+- SET OVR License Grant and Restriction. Click OK.
+
+  ![SET OVR License Grant and Restriction, OK](img/go-offline/01b-license.png)
+
+The connection window is titled with the SET version, for example SET v 12.2.0 build 3 (2026-08-17 22:26 CET). The group inside it is labelled Connection Settings.
 
 Choose **Use local / network database**.
 
-![Use local / network database](img/go-offline/01-connection.webp)
+![Use local / network database and Database Type](img/go-offline/01c-connection-settings.png)
 
 The other choices on that window are Use integrated database, Use SET-Online database, and Import Database-Backup from SQL file.
 
-With local / network selected, the form shows ONLINE System / TYPE, Database Type, Database, Server, Port, DB-Username, DB-Password, Test connection, and Connect. Kickboxing is `www.sportdata.org/kickboxing`.
+With local / network selected, the form shows ONLINE System / TYPE, Database Type, Database, Server, Port, DB-Username, DB-Password, Test connection, and Connect. Kickboxing is `www.sportdata.org/kickboxing`. ONLINE System / TYPE shows Kickboxing [www.sportdata.org/kickboxing]. Database has a Local H2 Databases... dropdown next to the name field. Below the fields are Remember password on next login, Language, License Manager, and Settings with Export, Import, and Remote Import.
 
-Create DB User for remote access stayed greyed out. Do not use the names already in the boxes. They are whatever this install last stored, not the event setup. This session stopped before Connect, so a finished local login is not confirmed here.
+Database Type offers only two values: H2 - Integrated DB Server and MYSQL - External DB Server. At the Berner Cup the venue used MYSQL - External DB Server on port 27000. See [Local server without MariaDB](local-server.md). On SET 12.2.0 build 3 (local test, 6 Oct 2026): the restored local copy uses H2 - Integrated DB Server. Server showed localhost and Port showed 3306, greyed out with H2. These are local defaults, not a correction of the venue port 27000.
+
+![Database Type values](img/go-offline/01d-database-type.png)
+
+Create DB User for remote access stayed greyed out. It was greyed out again on 6 Oct 2026. Do not use the names already in the boxes. They are whatever this install last stored, not the event setup. Click Test connection before Connect.
+
+![Test connection, Create DB User for remote access (greyed out), Connect](img/go-offline/01e-connection-buttons.png)
+
+On 3 Oct 2026, this session stopped before Connect, so a finished local login is not confirmed here.
+
+**Warning: do not pick Use integrated database to reopen a restored copy.** On SET 12.2.0 build 3 (local test, 6 Oct 2026): picking Use integrated database greys out the database fields. Connect then opens SET's default integrated database, not the restored event. Logging in with the event's user then fails with Wrong SET-Username or SET-Password!. To reopen a restored local copy, keep Use local / network database with H2 - Integrated DB Server and the copy's database name.
+
+![Use integrated database greys out the database fields](img/go-offline/01f-integrated-greyed.png)
+
+The SET Login window has SET-Username, SET-Password, Remember password on next login, and the modes Registration Mode, RING Mode, Administration Mode, Referee Mode, and Terminal Mode, with Log in and Cancel. Choose Administration Mode for the checks below.
+
+![SET Login, Log in](img/go-offline/01g-set-login.png)
 
 ## Checks from the process document
 
