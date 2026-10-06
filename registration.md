@@ -6,6 +6,10 @@ Registration starts for athletes in the different categories, including Grand Ch
 
 Online payments are ideally done at this stage as well.
 
+In SET the payments per club are in "Entry fee", then "Entry fee from clubs". See [Entry and payments](entry.md).
+
+![Entry fee from clubs, summary line and Comment column](img/entry/05a-summary-comment.png)
+
 ## Register entries in SET
 
 In the Main Tree Menu, right-click "Individual / Team Entries". The menu has "Registration of individuals" and "Registration of teams".

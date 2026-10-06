@@ -4,7 +4,7 @@ Source: process document added 3 Oct 2026. The menu paths on this page were chec
 
 In the Results tab, check results with "No award ceremony hold".
 
-Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a tab named "Results". Found instead: the "Result" menu in the Main Tree Menu, below. The venue photo at the bottom of this page shows the "Analysis" panel, which has a "Results" section and "Award ceremony done".
+Not found on SET 12.2.0 build 3 (local test, 6 Oct 2026): a tab named "Results". Found instead: the "Result" menu in the Main Tree Menu, below. The venue photo at the bottom of this page shows the "Analysis" panel, which has a "Results" section and "Award ceremony done". See "Analysis panel" below.
 
 ## Show results without award ceremony
 
@@ -34,15 +34,47 @@ Generate them and print them.
 
 ![Official Results preview](img/results/03b-official-results-preview.png)
 
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the preview had 11 pages. The printer icon in the "PDFViewer" toolbar has the tooltip "Print Document". It opened no print dialog on the local computer, which has no printer set up. Check printing at the venue.
+
+![PDFViewer, Print Document](img/results/03c-print-document.png)
+
 ## Award ceremony done
 
 Then right-click "Result" and choose "Award ceremony done". Mark the categories that have been printed and move them to the right side.
 
 ![Result, Award ceremony done](img/results/04a-result-menu-award-ceremony-done.png)
 
-The window has two lists. The left one is "No honouring done (1st Place set)". The right one is "Honouring done". Moving categories to the right with ">>" marks them as done. "<<" moves them back. No categories were moved on the local test.
+The window has two lists. The left one is "No honouring done (1st Place set)". The right one is "Honouring done". Moving categories to the right with ">>" marks them as done. "<<" moves them back.
 
 ![Award ceremony done, No honouring done and Honouring done](img/results/04b-award-ceremony-done-window.png)
+
+On SET 12.2.0 build 3 (local test, 6 Oct 2026): the lists showed "(77) No honouring done (1st Place set)" and "(0) Honouring done". 01 PF 021 YC M -37 kg was selected on the left.
+
+![01 PF 021 YC M -37 kg selected](img/results/04c-category-selected.png)
+
+">>" moved it to the right.
+
+![>>](img/results/04d-move-right.png)
+
+The counts changed to (76) and (1).
+
+![(1) Honouring done, 01 PF 021 YC M -37 kg](img/results/04e-honouring-done.png)
+
+"<<" moved it back, and the counts returned to (77) and (0). The test ended with nothing marked as done.
+
+![<<](img/results/04f-move-back.png)
+
+![(77) and (0) again](img/results/04g-back-to-77.png)
+
+## Analysis panel
+
+Open Panels, then "Analysis".
+
+![Panels, Analysis](img/results/05a-panels-analysis.png)
+
+The panel has the groups "List of Finalists", "Award ceremony done", "Results" and "Medals". The "Results" group has "Enter results / Edit", "Results", "Results - Save as CSV file", "Results from Club", "Results by selection", "Results - Save as CSV file by s…" (cut off on screen) and "Other Template". On SET 12.2.0 build 3 (local test, 6 Oct 2026): "Award ceremony done" here opened the same window as above, and "Results" opened the same "Results-Option" window as the Main Tree Menu item.
+
+![Analysis panel, Award ceremony done and Results](img/results/05b-analysis-panel.png)
 
 ## Venue photo
 
