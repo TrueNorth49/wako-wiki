@@ -17,6 +17,7 @@
   - [Printing and publishing the match list](printing.md)
   - [Results](results.md)
   - [Upload results to SET Online](upload-online.md)
+  - [Ranking export](ranking-export.md)
 
 - Other
 
