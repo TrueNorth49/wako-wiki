@@ -8,6 +8,20 @@ SET reads this backup format itself (every line ends in [EOL]). Do not import th
 
 You need the .sql backup file and the SET-Username and SET-Password used at the venue's SET. The backup carries the venue's SET users.
 
+## Video tutorial
+
+This 2 minute 26 second video shows the import from the "Import Database-Backup from SQL file" step to the event opening. It has English subtitles and a voiceover.
+
+<video controls width="100%" preload="metadata" src="video/open-sql-backup/set-sql-import-tutorial.mp4"></video>
+
+If the video does not play, open or download it here: [set-sql-import-tutorial.mp4](video/open-sql-backup/set-sql-import-tutorial.mp4 ':ignore').
+
+The name you type in the Database field can be any name you choose. It does not have to match the original or an existing database name. For example 123456 works. The name must not already exist on this PC and must not contain the word test.
+
+On SET 12.2.0 build 3 (local test, 2026-10-08): the Berner Cup backup was imported under the name 123456, then Lucas_A logged in and the event 7. Berner Cup 2026 opened normally.
+
+## Steps
+
 1. Start SET. In "Select network interface", click OK. Leave "Do not ask again" unticked. The interface address is blacked out.
 
 ![Select network interface, OK](img/open-sql-backup/01-network-interface.png)
@@ -24,7 +38,7 @@ You need the .sql backup file and the SET-Username and SET-Password used at the 
 
 ![Attention box, OK](img/open-sql-backup/04-attention-ok.png)
 
-5. Click the Database field and type a new name for the imported database, for example bernercup2026_import. The name must not exist yet. SET has a "Database exists already!" message for a name that is already used. The name must not contain the word test. SET stops with: Database: Input "<name>" contains invalid chars "test"!
+5. Click the Database field and type a name for the imported database. The name can be any name you choose. It does not have to match the original or an existing database name. Examples: bernercup2026_import or 123456. The name must not already exist on this PC. SET has a "Database exists already!" message for a name that is already used. The name must not contain the word test. SET stops with: Database: Input "<name>" contains invalid chars "test"!
 
 ![Database name](img/open-sql-backup/05-database-name.png)
 
@@ -58,7 +72,7 @@ SET did not show "Database exists already!" at that point. The "Load" file picke
 
 ![Close on the import window](img/open-sql-backup/10-close-log.png)
 
-11. Select "Use local / network database". The Database field keeps the new name.
+11. Select "Use local / network database". The Database field keeps the name you typed.
 
 ![Use local / network database](img/open-sql-backup/11-use-local.png)
 
@@ -84,7 +98,7 @@ SET did not show "Database exists already!" at that point. The "Load" file picke
 
 ## If it fails
 
-SET has the message "Database exists already!" for a name that is already used. On SET 12.2.0 build 3 (local test, 6 Oct 2026) it did not appear before the Load file picker, and the test was cancelled there, so the point where it appears is not confirmed. Pick a name that does not exist yet.
+SET has the message "Database exists already!" for a name that is already used. On SET 12.2.0 build 3 (local test, 6 Oct 2026) it did not appear before the Load file picker, and the test was cancelled there, so the point where it appears is not confirmed. Pick a name that does not exist yet. Any name works, for example 123456.
 
 SET stops with Database: Input "<name>" contains invalid chars "test"! if the name contains the word test. Click OK and pick a name without test, for example bernercup2026_import.
 
