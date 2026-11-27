@@ -16,6 +16,8 @@ To move athletes into a new category, follow [Extra match](extra-match.md).
 
 ![Delete entry window, OK](img/final-fixes/04-delete-entry-window.png)
 
+Do not use this window to remove one athlete. It deletes by category, not by athlete, and the search field does not filter the list to one athlete. To take one athlete out of a category, set the status to Deleted under All entries. See [Remove an athlete from a category](fixes.md?id=remove-an-athlete-from-a-category).
+
 On SET 12.2.0 build 3 (local test, 6 Oct 2026): OK was not clicked, so no entry was deleted.
 
 ## Find who has not shown up
@@ -33,7 +35,7 @@ Also check who has not shown up. They are still Pending. Clarify why.
 Athlete names and weights are blurred in this screenshot.
 
 - If an athlete is on the way and will probably arrive soon, leave them on the draw. They are weighed afterwards.
-- If a late athlete is overweight, no further moves are possible. Delete them. Cross them through on the draw so no fight takes place. See [Cross through an athlete](final-fixes.md?id=cross-through-an-athlete).
+- If a late athlete is overweight, no further moves are possible. Set the status to Deleted under All entries. See [Remove an athlete from a category](fixes.md?id=remove-an-athlete-from-a-category). Cross them through on the draw so no fight takes place. See [Cross through an athlete](final-fixes.md?id=cross-through-an-athlete).
 - Double-check categories that still have only one athlete.
 
 The process document called this "cross-block". That is not a SET label. The SET item is "Cross / Undo cross through competitor on this table".
